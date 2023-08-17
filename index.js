@@ -1,4 +1,4 @@
-// Fetch From dn.json and API
+// Fetch From db.json and API
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         jokesArray.forEach (jokeObj => renderJokes(jokeObj))
     })
 
-    fetch("http://localhost:3000/jokes", {
+    fetch("http://localhost:3000/jokes?type=Programming", {
         method: "GET"
     })
     .then(res => res.json())
@@ -78,8 +78,10 @@ const progBtn = document.getElementById("prog-button")
 const genBtn = document.getElementById("gen-button")
 
 progBtn.addEventListener("click", function() {
+
     const jokeCardsContainer = document.getElementById("joke-cards-container")
     jokeCardsContainer.innerHTML = ""
+
     fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
         method: "GET"
     })
@@ -89,17 +91,40 @@ progBtn.addEventListener("click", function() {
             renderJokes(jokeObj)
         }
     })
+
+    fetch("http://localhost:3000/jokes?type=Programming", {
+        method: "GET"
+    })
+    .then(res => res.json())
+    .then(function (jokesArray) {
+        for(const jokeObj of jokesArray) {
+            renderJokes(jokeObj)
+        }
+    })
+
 })
 
 genBtn.addEventListener("click", function() {
+
     const jokeCardsContainer = document.getElementById("joke-cards-container")
     jokeCardsContainer.innerHTML = ""
+
     fetch("https://official-joke-api.appspot.com/jokes/general/ten", {
         method: "GET"
     })
     .then(res => res.json())
     .then(function (jokeArray) {
         for(const jokeObj of jokeArray) {
+            renderJokes(jokeObj)
+        }
+    })
+
+    fetch("http://localhost:3000/jokes?type=General", {
+        method: "GET"
+    })
+    .then(res => res.json())
+    .then(function (jokesArray) {
+        for(const jokeObj of jokesArray) {
             renderJokes(jokeObj)
         }
     })
