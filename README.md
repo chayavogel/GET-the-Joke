@@ -8,7 +8,7 @@ These buttons enable the user to select the topic of the jokes they would like t
 ![Screenshot 2023-08-17 133752](https://github.com/chayavogel/Phase-1-Project/assets/118293488/fe87a10a-398e-47bc-b3b2-8b7e790f4deb)
 
 When the user hovers over the gray area, the punchline is revealed:
-
+git
 
 This submission form enables a use to submit their own joke:
 ![Screenshot 2023-08-17 134005](https://github.com/chayavogel/Phase-1-Project/assets/118293488/65eaab95-eb29-4bb0-a9e1-a47bbdd98ee8)
