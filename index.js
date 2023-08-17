@@ -1,15 +1,6 @@
 // Fetch From db.json and API
 
 document.addEventListener("DOMContentLoaded", function() {
-
-    fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
-        method: "GET"
-    })
-    .then(res => res.json())
-    .then(function (jokesArray) {
-        jokesArray.forEach (jokeObj => renderJokes(jokeObj))
-    })
-
     fetch("http://localhost:3000/jokes?type=Programming", {
         method: "GET"
     })
@@ -18,6 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
         for(const jokeObj of jokesArray) {
             renderJokes(jokeObj)
         }
+    })
+
+    fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
+        method: "GET"
+    })
+    .then(res => res.json())
+    .then(function (jokesArray) {
+        jokesArray.forEach (jokeObj => renderJokes(jokeObj))
     })
 })
 
