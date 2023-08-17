@@ -1,4 +1,16 @@
 {
   "jokes": [
+    {
+      "type": "Programming",
+      "setup": "Why did the programmer quit her job?",
+      "punchline": "Because she didn’t get arrays",
+      "id": 1
+    },
+    {
+      "type": "General",
+      "setup": "What has four wheels and flies?",
+      "punchline": "What has four wheels and flies?",
+      "id": 2
+    }
   ]
 }
