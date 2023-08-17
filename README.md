@@ -13,6 +13,9 @@ When the user hovers over the gray area, the punchline is revealed:
 This submission form enables a use to submit their own joke:
 ![Screenshot 2023-08-17 134005](https://github.com/chayavogel/Phase-1-Project/assets/118293488/65eaab95-eb29-4bb0-a9e1-a47bbdd98ee8)
 
+Here is a walkthrough of the entire application:
+![2](https://github.com/chayavogel/Phase-1-Project/assets/118293488/8dae89d7-3a82-4828-9a20-2a7eb2f92fae)
+
 # Support
 If you have any questions on how to use my application, feel free to contact me via linkedIn.
 www.linkedin.com/in/chaya-vogel
