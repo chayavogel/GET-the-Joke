@@ -8,6 +8,7 @@ These buttons enable the user to select the topic of the jokes they would like t
 ![Screenshot 2023-08-17 133752](https://github.com/chayavogel/Phase-1-Project/assets/118293488/fe87a10a-398e-47bc-b3b2-8b7e790f4deb)
 
 When the user hovers over the gray area, the punchline is revealed:
+![Animation](https://github.com/chayavogel/Phase-1-Project/assets/118293488/ca11db14-3ab4-492c-b0af-d059180737cb)
 
 
 The user can also submit their own joke. This joke will be rendered on the page only when its category is selected:
