@@ -40,8 +40,12 @@ h1 {
     border-radius: 4px;
     padding: .5rem;
     background-color: white;
-    justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.623);
     transition: 0.3s;
-    align-content: center;
+}
+
+#punchline {
+    padding: .5rem;
+    font-style: italic;
+    background-color: rgba(39, 41, 40, 0.164);
 }
