@@ -14,7 +14,8 @@ This submission form enables a use to submit their own joke:
 ![Screenshot 2023-08-17 134005](https://github.com/chayavogel/Phase-1-Project/assets/118293488/65eaab95-eb29-4bb0-a9e1-a47bbdd98ee8)
 
 # Support
-If you have any questions on how to use my application, feel free to contact me via linkedIn - www.linkedin.com/in/chaya-vogel
+If you have any questions on how to use my application, feel free to contact me via linkedI
+www.linkedin.com/in/chaya-vogel
 
 # Contributing
 I am not open to contributions at this time, as this is a student project.
