@@ -1,9 +1,15 @@
+// Variables
+
+const configerationObjGET = {
+    method: "GET"
+}
+
+const jokeCardsContainer = document.getElementById("jokeCardsContainer")
+
 // Fetch From db.json and API
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("http://localhost:3000/jokes?type=Programming", {
-        method: "GET"
-    })
+    fetch("http://localhost:3000/jokes?type=Programming", configerationObjGET)
     .then(res => res.json())
     .then(function (jokesArray) {
         for(const jokeObj of jokesArray) {
@@ -11,9 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
-    fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
-        method: "GET"
-    })
+    fetch("https://official-joke-api.appspot.com/jokes/programming/ten", configerationObjGET)
     .then(res => res.json())
     .then(function (jokesArray) {
         jokesArray.forEach (jokeObj => renderJokes(jokeObj))
@@ -23,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
 //Render Jokes Function
 
 function renderJokes(jokeObj) {
-    const jokeCardsContainer = document.getElementById("jokeCardsContainer")
-
     const jokeCard = document.createElement("div")
     jokeCard.setAttribute("id", "card")
 
@@ -77,8 +79,6 @@ const progBtn = document.getElementById("progButton")
 const genBtn = document.getElementById("genButton")
 
 progBtn.addEventListener("click", function() {
-
-    const jokeCardsContainer = document.getElementById("jokeCardsContainer")
     jokeCardsContainer.innerHTML = ""
 
     fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
@@ -104,13 +104,9 @@ progBtn.addEventListener("click", function() {
 })
 
 genBtn.addEventListener("click", function() {
-
-    const jokeCardsContainer = document.getElementById("jokeCardsContainer")
     jokeCardsContainer.innerHTML = ""
 
-    fetch("https://official-joke-api.appspot.com/jokes/general/ten", {
-        method: "GET"
-    })
+    fetch("https://official-joke-api.appspot.com/jokes/general/ten", configerationObjGET)
     .then(res => res.json())
     .then(function (jokeArray) {
         for(const jokeObj of jokeArray) {
@@ -118,9 +114,7 @@ genBtn.addEventListener("click", function() {
         }
     })
 
-    fetch("http://localhost:3000/jokes?type=General", {
-        method: "GET"
-    })
+    fetch("http://localhost:3000/jokes?type=General", configerationObjGET)
     .then(res => res.json())
     .then(function (jokesArray) {
         for(const jokeObj of jokesArray) {
