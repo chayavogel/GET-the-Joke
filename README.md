@@ -1,7 +1,9 @@
 # Phase-1-Project
-The Joke App
+This is an application for displaying jokes. When the page loads, a list of ten jokes on the topic of programming are displayed.
+There are two buttons that enable the user to select the topic of jokes that they would like displayed.
+There is also a joke submission feature enabling the user to submit and render their own jokes.
 
-# Description
+# Visuals
 This is an application for displaying jokes.
 
 These buttons enable the user to select the topic of the jokes they would like to view:
