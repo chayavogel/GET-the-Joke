@@ -71,3 +71,36 @@ form.addEventListener("submit", function(event){
     .then(res => res.json())
     .then(jokeObj => renderJokes(jokeObj))
 })
+
+// Joke Topic Choice Buttons Event Listeners
+
+const progBtn = document.getElementById("prog-button")
+const genBtn = document.getElementById("gen-button")
+
+progBtn.addEventListener("click", function() {
+    const jokeCardsContainer = document.getElementById("joke-cards-container")
+    jokeCardsContainer.innerHTML = ""
+    fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
+        method: "GET"
+    })
+    .then(res => res.json())
+    .then(function (jokeArray) {
+        for(const jokeObj of jokeArray) {
+            renderJokes(jokeObj)
+        }
+    })
+})
+
+genBtn.addEventListener("click", function() {
+    const jokeCardsContainer = document.getElementById("joke-cards-container")
+    jokeCardsContainer.innerHTML = ""
+    fetch("https://official-joke-api.appspot.com/jokes/general/ten", {
+        method: "GET"
+    })
+    .then(res => res.json())
+    .then(function (jokeArray) {
+        for(const jokeObj of jokeArray) {
+            renderJokes(jokeObj)
+        }
+    })
+})
