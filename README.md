@@ -4,8 +4,6 @@ There are two buttons that enable the user to select the topic of jokes that the
 There is also a joke submission feature enabling the user to submit and render their own jokes.
 
 # Visuals
-This is an application for displaying jokes.
-
 These buttons enable the user to select the topic of the jokes they would like to view:
 ![Screenshot 2023-08-17 133752](https://github.com/chayavogel/Phase-1-Project/assets/118293488/fe87a10a-398e-47bc-b3b2-8b7e790f4deb)
 
