@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //Render Jokes Function
 
 function renderJokes(jokeObj) {
-    const jokeCardsContainer = document.getElementById("joke-cards-container")
+    const jokeCardsContainer = document.getElementById("jokeCardsContainer")
 
     const jokeCard = document.createElement("div")
     jokeCard.setAttribute("id", "card")
@@ -74,12 +74,12 @@ form.addEventListener("submit", function(event){
 
 // Joke Topic Choice Buttons Event Listeners
 
-const progBtn = document.getElementById("prog-button")
-const genBtn = document.getElementById("gen-button")
+const progBtn = document.getElementById("progButton")
+const genBtn = document.getElementById("genButton")
 
 progBtn.addEventListener("click", function() {
 
-    const jokeCardsContainer = document.getElementById("joke-cards-container")
+    const jokeCardsContainer = document.getElementById("jokeCardsContainer")
     jokeCardsContainer.innerHTML = ""
 
     fetch("https://official-joke-api.appspot.com/jokes/programming/ten", {
@@ -106,7 +106,7 @@ progBtn.addEventListener("click", function() {
 
 genBtn.addEventListener("click", function() {
 
-    const jokeCardsContainer = document.getElementById("joke-cards-container")
+    const jokeCardsContainer = document.getElementById("jokeCardsContainer")
     jokeCardsContainer.innerHTML = ""
 
     fetch("https://official-joke-api.appspot.com/jokes/general/ten", {
