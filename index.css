@@ -33,4 +33,15 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     grid-gap: 1rem;
+    padding: 30px
+}
+
+#card {
+    border-radius: 4px;
+    padding: .5rem;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.623);
+    transition: 0.3s;
+    align-content: center;
 }
