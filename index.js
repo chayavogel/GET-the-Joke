@@ -5,18 +5,18 @@ const jokeCardsContainer = document.getElementById("jokeCardsContainer")
 // Fetch From db.json and API
 
 document.addEventListener("DOMContentLoaded", function() {
+    fetch("https://official-joke-api.appspot.com/jokes/programming/ten")
+    .then(res => res.json())
+    .then(function (jokesArray) {
+        jokesArray.forEach (jokeObj => renderJokes(jokeObj))
+    })
+
     fetch("http://localhost:3000/jokes?type=Programming")
     .then(res => res.json())
     .then(function (jokesArray) {
         for(const jokeObj of jokesArray) {
             renderJokes(jokeObj)
         }
-    })
-
-    fetch("https://official-joke-api.appspot.com/jokes/programming/ten")
-    .then(res => res.json())
-    .then(function (jokesArray) {
-        jokesArray.forEach (jokeObj => renderJokes(jokeObj))
     })
 })
 
@@ -66,7 +66,7 @@ form.addEventListener("submit", function(event){
         })
     })
     .then(res => res.json())
-    .then(jokeObj => renderJokes(jokeObj))
+    alert("Submitted!")
 })
 
 // Joke Topic Choice Buttons Event Listeners

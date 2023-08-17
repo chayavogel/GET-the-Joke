@@ -8,9 +8,21 @@
     },
     {
       "type": "General",
-      "setup": "What has four wheels and flies?",
-      "punchline": "What has four wheels and flies?",
+      "setup": "Why did the chicken cross the road?",
+      "punchline": "To get to the other side!",
       "id": 2
+    },
+    {
+      "type": "General",
+      "setup": "What is the difference between a chossid and a chef?",
+      "punchline": "The chef puts the oil in the pan and the chossid puts the pan in the ohel!",
+      "id": 3
+    },
+    {
+      "type": "General",
+      "setup": "What is the difference between a chossid and a chef?",
+      "punchline": "The chef puts the oil in the pan and the chossid puts the pan in the ohel!",
+      "id": 4
     }
   ]
 }
