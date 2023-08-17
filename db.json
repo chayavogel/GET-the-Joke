@@ -1,16 +1,4 @@
 {
   "jokes": [
-    {
-      "type": "General",
-      "setup": "General",
-      "punchline": "General",
-      "id": 1
-    },
-    {
-      "type": "Programming",
-      "setup": "Programming",
-      "punchline": "Programming",
-      "id": 2
-    }
   ]
 }
