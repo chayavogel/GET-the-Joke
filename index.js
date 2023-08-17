@@ -1,4 +1,4 @@
-// Load Jokes from API and db.json
+// Fetch From dn.json and API
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 })
 
-//Function to render jokes from API, db.json, and joke submission form
+//Render Jokes Function
 
 function renderJokes(jokeObj) {
     const jokeCardsContainer = document.getElementById("joke-cards-container")
@@ -48,3 +48,26 @@ function renderJokes(jokeObj) {
         punchline.innerText = "Hover for punchline!"
     })
 }
+
+// Submission Form Event Listener and Fetch
+
+const form = document.getElementById("submitForm")
+
+form.addEventListener("submit", function(event){
+
+    event.preventDefault()
+
+    fetch("http://localhost:3000/jokes", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            "type": event.target.submitTopic.value,
+            "setup": event.target.submitSetup.value,
+            "punchline": event.target.submitPunchline.value
+        })
+    })
+    .then(res => res.json())
+    .then(jokeObj => renderJokes(jokeObj))
+})
