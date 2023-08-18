@@ -25,3 +25,7 @@ I am not open to contributions at this time, as this is a student project.
 
 # Authors and acknowledgment
 I used a remote API for my jokes. You can find it here: https://github.com/15Dkatz/official_joke_api
+
+# Blog
+Here is a blog I wrote on part of my process creating this application.
+https://chayavogel.hashnode.dev/ikea-and-the-console
