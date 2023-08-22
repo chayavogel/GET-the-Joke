@@ -92,7 +92,6 @@ progBtn.addEventListener("click", function() {
             renderJokes(jokeObj)
         }
     })
-
 })
 
 genBtn.addEventListener("click", function() {

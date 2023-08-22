@@ -1,16 +1,4 @@
 {
   "jokes": [
-    {
-      "type": "Programming",
-      "setup": "Why did the programmer quit her job?",
-      "punchline": "Because she didn’t get arrays",
-      "id": 1
-    },
-    {
-      "type": "General",
-      "setup": "Why did the chicken cross the road?",
-      "punchline": "To get to the other side!",
-      "id": 2
-    }
   ]
 }
